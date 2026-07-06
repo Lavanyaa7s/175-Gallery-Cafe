@@ -1190,6 +1190,11 @@ button {
     gap: 3rem;
   }
   
+  .events-content {
+    position: static;
+    top: auto;
+  }
+  
   .hero-title {
     font-size: 3.75rem;
   }
@@ -1211,6 +1216,14 @@ button {
   
   .hero-title {
     font-size: 2.85rem;
+  }
+  
+  .events-title {
+    font-size: 2.5rem;
+  }
+  
+  .events-grid {
+    gap: 2rem;
   }
   
   .menu-grid, .voices-grid, .gallery-grid {
