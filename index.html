@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>175 Gallery | The Art of the Pour - Melaka Heritage Dining</title>
+  <meta name="description" content="A curated culinary and artisanal coffee experience set within a historic heritage shophouse at 175 Jalan Tun Tan Cheng Lock, Melaka. Where every dish is an exhibit.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">175 Gallery</a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#menu" class="nav-link">MENU</a></li>
+          <li><a href="#story" class="nav-link">OUR STORY</a></li>
+          <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+          <li><a href="#voices" class="nav-link">VOICES</a></li>
+          <li><a href="#visit" class="nav-link">VISIT</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="tel:+6062821750" class="phone-btn" title="Call Us" aria-label="Call Us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <button class="btn btn-burgundy" id="openReserveBtn">RESERVE</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section ("The Art of the Pour.") -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="location-tag">175 JALAN TUN TAN CHENG LOCK, MELAKA</span>
+          <h1 class="hero-title serif-title">The Art of <span>the Pour.</span></h1>
+          <p class="hero-desc">A curated culinary experience set within the historic heart of Melaka. Where every dish is an exhibit, and every visit is a gallery walk.</p>
+          
+          <div class="hero-ctas">
+            <button class="btn btn-green" id="heroReserveBtn">RESERVE A TABLE</button>
+            <a href="#menu" class="btn btn-outline">EXPLORE MENU</a>
+          </div>
+          
+          <div class="hero-badge">
+            <span><span class="star">★</span> 4.6 / 5</span>
+            <div class="divider"></div>
+            <span>199 REVIEWS</span>
+            <div class="divider"></div>
+            <span>WOMEN-OWNED</span>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper">
+          <div class="hero-img-container">
+            <img src="images/waffle.png" alt="Gourmet Belgian Waffle with Fresh Raspberries and Cream at 175 Gallery" id="heroImage">
+          </div>
+          
+          <div class="floating-badge">
+            <div class="icon">★</div>
+            <div class="floating-badge-text">
+              <h4>Signature Exhibit</h4>
+              <p>Berry Waffle & Pistachio Dust</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" id="story">
+      <div class="container story-grid">
+        <div class="story-images">
+          <div class="story-img img-1">
+            <img src="images/courtyard.png" alt="Melaka Heritage Shophouse Indoor Courtyard">
+          </div>
+          <div class="story-img img-2">
+            <img src="images/interior.png" alt="175 Gallery Interior Ambiance">
+          </div>
+        </div>
+        
+        <div class="story-content">
+          <span class="section-tag">OUR STORY & HERITAGE</span>
+          <h2 class="story-title serif-title">Where Heritage Shophouse Meets Artisanal Craft.</h2>
+          <p class="story-text">Nestled along the storied Jalan Tun Tan Cheng Lock in Melaka, 175 Gallery transforms a centuries-old Peranakan heritage shophouse into a living exhibit of gastronomy and coffee artistry.</p>
+          
+          <div class="quote-box">
+            "We believe that dining is an intimate dialogue between space, tradition, and culinary innovation."
+          </div>
+          
+          <p class="story-text">Every beam of weathered wood and every sun-drenched courtyard stone tells the story of Melaka's vibrant trading past, while our baristas and chefs craft contemporary flavors that awaken the senses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section ("Curated Exhibits") -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CURATED EXHIBITS</span>
+          <h2 class="section-title serif-title">A Symphony of Flavors</h2>
+          <p class="section-subtitle">Explore our meticulously crafted offerings, from signature espresso pours to heritage-inspired culinary creations.</p>
+        </div>
+        
+        <div class="menu-tabs" id="menuTabs">
+          <button class="menu-tab active" data-category="all">All Exhibits</button>
+          <button class="menu-tab" data-category="pour">The Pour (Coffee)</button>
+          <button class="menu-tab" data-category="exhibit">The Exhibit (Mains)</button>
+          <button class="menu-tab" data-category="sweet">The Sweet Finish</button>
+        </div>
+        
+        <div class="menu-grid" id="menuGrid">
+          <!-- Card 1 -->
+          <div class="menu-card" data-category="pour">
+            <div class="menu-card-img">
+              <img src="images/coffee.png" alt="Artisanal Layered Iced Espresso">
+              <span class="menu-badge">Signature</span>
+            </div>
+            <div class="menu-card-content">
+              <div>
+                <div class="menu-card-top">
+                  <h3 class="menu-card-title">Artisanal Iced Espresso</h3>
+                  <span class="menu-card-price">$6.50</span>
+                </div>
+                <p class="menu-card-desc">Layered double shot espresso over organic oat milk with frozen espresso cubes and subtle gula melaka syrup.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="menu-card" data-category="sweet">
+            <div class="menu-card-img">
+              <img src="images/waffle.png" alt="Gourmet Berry Waffle">
+              <span class="menu-badge">Signature</span>
+            </div>
+            <div class="menu-card-content">
+              <div>
+                <div class="menu-card-top">
+                  <h3 class="menu-card-title">Berry & Pistachio Waffle</h3>
+                  <span class="menu-card-price">$14.00</span>
+                </div>
+                <p class="menu-card-desc">Crispy yeast Belgian waffle topped with fresh red raspberries, Madagascar vanilla cream, and toasted pistachio dust.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="menu-card" data-category="exhibit">
+            <div class="menu-card-img">
+              <img src="images/laksa.png" alt="Heritage Laksa Bowl">
+              <span class="menu-badge">Gluten-Free</span>
+            </div>
+            <div class="menu-card-content">
+              <div>
+                <div class="menu-card-top">
+                  <h3 class="menu-card-title">Melaka Heritage Laksa</h3>
+                  <span class="menu-card-price">$16.50</span>
+                </div>
+                <p class="menu-card-desc">Rich spiced coconut broth served with rice noodles, tiger prawns, bean sprouts, and aromatic Vietnamese mint.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="menu-card" data-category="sweet">
+            <div class="menu-card-img">
+              <img src="images/croissant.png" alt="Pistachio Rose Croissant">
+              <span class="menu-badge">Vegetarian</span>
+            </div>
+            <div class="menu-card-content">
+              <div>
+                <div class="menu-card-top">
+                  <h3 class="menu-card-title">Pistachio Rose Croissant</h3>
+                  <span class="menu-card-price">$7.50</span>
+                </div>
+                <p class="menu-card-desc">Twice-baked buttery French croissant filled with Sicilian pistachio frangipane and fragrant rosewater glaze.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="menu-card" data-category="pour">
+            <div class="menu-card-img">
+              <img src="images/coldbrew.png" alt="Cold Brew Tonic">
+              <span class="menu-badge">Vegan</span>
+            </div>
+            <div class="menu-card-content">
+              <div>
+                <div class="menu-card-top">
+                  <h3 class="menu-card-title">Citrus Cold Brew Tonic</h3>
+                  <span class="menu-card-price">$7.00</span>
+                </div>
+                <p class="menu-card-desc">24-hour steeped single origin Ethiopian cold brew infused with Mediterranean tonic water and dehydrated orange slice.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="menu-card" data-category="exhibit">
+            <div class="menu-card-img">
+              <img src="images/avocado.png" alt="Avocado Sourdough Toast">
+              <span class="menu-badge">Vegetarian</span>
+            </div>
+            <div class="menu-card-content">
+              <div>
+                <div class="menu-card-top">
+                  <h3 class="menu-card-title">Avocado Shroom Toast</h3>
+                  <span class="menu-card-price">$13.50</span>
+                </div>
+                <p class="menu-card-desc">Smashed Hass avocado on artisanal sourdough with sautéed wild mushrooms, poached egg, and truffle oil drizzle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiries & Events Section (Exact match to Video Frame 3) -->
+    <section class="events-section" id="events">
+      <div class="container events-grid">
+        <div class="events-content">
+          <span class="section-tag">INQUIRIES & EVENTS</span>
+          <h2 class="events-title serif-title">Curate Your Perfect Occasion</h2>
+          <p class="events-desc">Our heritage shophouse provides a one-of-a-kind backdrop for private events, intimate celebrations, and group dining. Tell us about your vision — we'll bring it to life.</p>
+        </div>
+        
+        <div class="accordion-form" id="accordionForm">
+          <!-- Step 1 -->
+          <div class="accordion-step active" id="step1">
+            <div class="step-header" onclick="toggleStep(1)">
+              <div class="step-number">01</div>
+              <div class="step-title">Tell us about your occasion</div>
+            </div>
+            <div class="step-body">
+              <div class="form-group-radio">
+                <label class="radio-option">
+                  <input type="radio" name="occasion" value="Corporate Event" checked>
+                  <span>Corporate Event</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="occasion" value="Wedding Party">
+                  <span>Wedding Party</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="occasion" value="Other">
+                  <span>Other Celebration</span>
+                </label>
+              </div>
+              
+              <div class="form-row">
+                <div class="input-box">
+                  <label for="eventDate">DATE</label>
+                  <input type="date" id="eventDate" class="input-field" required>
+                </div>
+                <div class="input-box">
+                  <label for="eventGuests">GUESTS</label>
+                  <input type="number" id="eventGuests" class="input-field" placeholder="e.g. 12" min="1" max="150" required>
+                </div>
+              </div>
+              
+              <button class="btn btn-full" type="button" onclick="goToStep(2)">CONTINUE</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="accordion-step" id="step2">
+            <div class="step-header" onclick="toggleStep(2)">
+              <div class="step-number">02</div>
+              <div class="step-title">Share your details</div>
+            </div>
+            <div class="step-body">
+              <div class="form-row">
+                <div class="input-box">
+                  <label for="contactName">YOUR NAME</label>
+                  <input type="text" id="contactName" class="input-field" placeholder="Full Name">
+                </div>
+                <div class="input-box">
+                  <label for="contactPhone">PHONE NUMBER</label>
+                  <input type="tel" id="contactPhone" class="input-field" placeholder="+60 12-345 6789">
+                </div>
+              </div>
+              <div class="input-box" style="margin-bottom: 1.5rem;">
+                <label for="contactEmail">EMAIL ADDRESS</label>
+                <input type="email" id="contactEmail" class="input-field" placeholder="you@example.com">
+              </div>
+              <div class="input-box" style="margin-bottom: 1.5rem;">
+                <label for="specialNotes">SPECIAL VISION & REQUIREMENTS</label>
+                <textarea id="specialNotes" class="input-field" rows="3" placeholder="Tell us about seating preferences, dietary requirements, or theme ideas..."></textarea>
+              </div>
+              <button class="btn btn-full" type="button" onclick="goToStep(3)">REVIEW & SUBMIT</button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="accordion-step" id="step3">
+            <div class="step-header" onclick="toggleStep(3)">
+              <div class="step-number">03</div>
+              <div class="step-title">We'll curate your experience</div>
+            </div>
+            <div class="step-body">
+              <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; border: 1px solid var(--border-light);">
+                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--accent-burgundy);" id="summaryOccasion">Corporate Event</h4>
+                <p style="font-size: 0.9375rem; color: var(--text-muted); margin-bottom: 0.25rem;"><strong>Date:</strong> <span id="summaryDate">To be selected</span> | <strong>Guests:</strong> <span id="summaryGuests">12</span></p>
+                <p style="font-size: 0.9375rem; color: var(--text-muted);"><strong>Contact:</strong> <span id="summaryContact">Name & Email</span></p>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Our event curator will review your requirements and reach out within 24 hours to finalize your bespoke menu and layout.</p>
+              <button class="btn btn-full" type="button" onclick="submitEventForm()">CONFIRM EVENT INQUIRY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section ("Moments, Captured") -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">VISUAL ARCHIVE</span>
+          <h2 class="section-title serif-title">Moments, Captured</h2>
+          <p class="section-subtitle">A glimpse into our heritage shophouse sanctuary, where light, architecture, and culinary art converge.</p>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item large" onclick="openLightbox('images/courtyard.png', 'The Courtyard Sanctuary')">
+            <img src="images/courtyard.png" alt="Courtyard Sanctuary">
+            <div class="gallery-overlay">
+              <h4>The Courtyard Sanctuary</h4>
+              <p>Sunlight streaming through our historic glass skylight.</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openLightbox('images/waffle.png', 'The Art of Plating')">
+            <img src="images/waffle.png" alt="Waffle Plating">
+            <div class="gallery-overlay">
+              <h4>The Art of Plating</h4>
+              <p>Signature berry waffle with pistachio dust.</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item tall" onclick="openLightbox('images/coffee.png', 'Artisanal Pours')">
+            <img src="images/coffee.png" alt="Artisanal Pours">
+            <div class="gallery-overlay">
+              <h4>Artisanal Pours</h4>
+              <p>Layered iced espresso crafted with precision.</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openLightbox('images/interior.png', 'Heritage Shophouse Living')">
+            <img src="images/interior.png" alt="Heritage Shophouse Living">
+            <div class="gallery-overlay">
+              <h4>Heritage Shophouse Living</h4>
+              <p>Historic Melaka architecture preserved.</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openLightbox('images/avocado.png', 'Artisanal Brunch Creations')">
+            <img src="images/avocado.png" alt="Artisanal Brunch">
+            <div class="gallery-overlay">
+              <h4>Artisanal Brunch Creations</h4>
+              <p>Gourmet sourdough toast with wild mushrooms.</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" onclick="openLightbox('images/croissant.png', 'Morning Pastry Rituals')">
+            <img src="images/croissant.png" alt="Morning Pastry">
+            <div class="gallery-overlay">
+              <h4>Morning Pastry Rituals</h4>
+              <p>Freshly baked artisanal pastries every morning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voices Section -->
+    <section class="voices-section" id="voices">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ECHOES FROM THE GALLERY</span>
+          <h2 class="section-title serif-title">Voices of Our Guests</h2>
+          <p class="section-subtitle">What visitors say about their culinary journey through 175 Gallery.</p>
+        </div>
+        
+        <div class="voices-grid">
+          <div class="voice-card">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote-text">"An absolute gem in Melaka! The waffle is crisp yet fluffy, and enjoying iced coffee in the skylight courtyard felt like stepping into a serene living museum."</p>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">E</div>
+              <div class="reviewer-info">
+                <h5>Elena Rostova</h5>
+                <span>Food & Travel Writer</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="voice-card">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote-text">"We hosted our intimate anniversary dinner here. The team curated an unforgettable 4-course menu that celebrated traditional Melaka spices with a modern twist."</p>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">M</div>
+              <div class="reviewer-info">
+                <h5>Marcus & Sarah Tan</h5>
+                <span>Private Event Guests</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="voice-card">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote-text">"The aesthetic perfection of this cafe is unmatched. Every single detail, from the Peranakan tiles to the coffee presentation, is curated with profound love."</p>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">A</div>
+              <div class="reviewer-info">
+                <h5>Ahmad Razif</h5>
+                <span>Architecture Photographer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Visit & Footer Section -->
+  <footer class="footer" id="visit">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>175 Gallery</h3>
+          <p>A curated culinary and artisanal coffee experience located within a restored Peranakan heritage shophouse in UNESCO World Heritage City, Melaka.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="TripAdvisor">TA</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">OPENING HOURS</h4>
+          <ul class="footer-links">
+            <li><strong>Tuesday – Friday:</strong><br>10:00 AM – 6:00 PM</li>
+            <li><strong>Saturday – Sunday:</strong><br>9:00 AM – 7:00 PM</li>
+            <li><strong>Monday:</strong><br><span style="color: var(--accent-rust);">Closed for Curating</span></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">LOCATION & CONTACT</h4>
+          <p>175, Jalan Tun Tan Cheng Lock,<br>75200 Melaka, Malaysia</p>
+          <p><strong>Phone:</strong> +60 6-282 1750<br><strong>Email:</strong> reserve@175gallery.com</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">JOIN THE CURATORS' LIST</h4>
+          <p>Subscribe to receive invitations to private supper clubs, seasonal menu launches, and cultural exhibitions.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to 175 Gallery!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+            <button type="submit" class="newsletter-btn">JOIN</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>&copy; 2026 175 Gallery Melaka. All rights reserved. Designed with precision & heritage.</div>
+        <div>Women-Owned & Curated with Love.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Table Reservation Modal -->
+  <div class="modal-overlay" id="reservationModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeReserveBtn">&times;</button>
+      <span class="section-tag">RESERVE A TABLE</span>
+      <h3 class="serif-title" style="font-size: 2.25rem; margin-bottom: 1.5rem;">Join Us at The Gallery</h3>
+      
+      <form id="reserveForm" onsubmit="submitReservation(event)">
+        <div class="form-row">
+          <div class="input-box">
+            <label for="resDate">DATE</label>
+            <input type="date" id="resDate" class="input-field" required>
+          </div>
+          <div class="input-box">
+            <label for="resTime">TIME</label>
+            <select id="resTime" class="input-field" required>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="3:30 PM">3:30 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="input-box">
+            <label for="resGuests">GUESTS</label>
+            <select id="resGuests" class="input-field" required>
+              <option value="2 Guests">2 Guests (Intimate Table)</option>
+              <option value="3 Guests">3 Guests</option>
+              <option value="4 Guests">4 Guests (Courtyard View)</option>
+              <option value="5-8 Guests">5-8 Guests (Group Table)</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="resPhone">PHONE NUMBER</label>
+            <input type="tel" id="resPhone" class="input-field" placeholder="+60 12-345 6789" required>
+          </div>
+        </div>
+        
+        <div class="input-box" style="margin-bottom: 2rem;">
+          <label for="resName">FULL NAME</label>
+          <input type="text" id="resName" class="input-field" placeholder="Your Name" required>
+        </div>
+        
+        <button type="submit" class="btn btn-full">CONFIRM RESERVATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal">
+    <div class="modal-content lightbox-content" id="lightboxContent">
+      <button class="modal-close" onclick="closeLightbox()">&times;</button>
+      <img src="" alt="Lightbox View" id="lightboxImage">
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
