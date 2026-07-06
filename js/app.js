@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initMenuFiltering();
   initModals();
+  initMobileMenu();
   initScrollAnimations();
 });
 
@@ -259,4 +260,45 @@ function initScrollAnimations() {
     el.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
     observer.observe(el);
   });
+}
+
+/* --- Mobile Menu Drawer --- */
+function initMobileMenu() {
+  const openMenuBtn = document.getElementById('openMenuBtn');
+  const closeMenuBtn = document.getElementById('closeMenuBtn');
+  const mobileOverlay = document.getElementById('mobileMenuOverlay');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (openMenuBtn && mobileOverlay) {
+    openMenuBtn.addEventListener('click', () => {
+      mobileOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  if (closeMenuBtn && mobileOverlay) {
+    closeMenuBtn.addEventListener('click', closeMobileMenu);
+  }
+
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener('click', (e) => {
+      if (e.target === mobileOverlay) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+}
+
+function closeMobileMenu() {
+  const mobileOverlay = document.getElementById('mobileMenuOverlay');
+  if (mobileOverlay) {
+    mobileOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 }
