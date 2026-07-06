@@ -1185,14 +1185,27 @@ button {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .hero-grid, .story-grid, .events-grid {
+  .hero-grid, .story-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
   
+  .events-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
   .events-content {
-    position: static;
-    top: auto;
+    position: static !important;
+    top: auto !important;
+    width: 100%;
+  }
+  
+  .accordion-form {
+    width: 100%;
+    position: relative;
+    z-index: 1;
   }
   
   .hero-title {
